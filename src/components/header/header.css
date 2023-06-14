@@ -1,0 +1,70 @@
+header {
+  height: 100vh;
+  padding-top: 3.5rem;
+  overflow: hidden;
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  background: rgba(255, 255, 255, 0.17);
+  border-radius: 10rem;
+  padding: 1rem;
+}
+
+h1 {
+  text-align: center;
+}
+
+.tc-buttons {
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 1.2rem;
+}
+
+/************************************* ME ***************************************/
+
+.me-img {
+  width: 22rem;
+  margin-top: 2.5rem;
+  border-radius: 50%;
+  overflow: hidden;
+  filter: contrast(70%);
+  filter: brightness(130%);
+}
+
+/************************************* TYPEWRITING ***************************************/
+.typewriting {
+  height: 1.2rem;
+  transform: translateX(3%);
+  text-align: center;
+}
+
+/************************************* SCROLL DOWN ***************************************/
+
+/************************************* SMALLER DEVICES ***************************************/
+
+/************************************* TABLETS ***************************************/
+@media screen and (max-width: 1024px) {
+  header {
+    height: 100vh;
+    padding-top: 3rem;
+  }
+
+  .header__container {
+    background: none;
+  }
+}
+
+/************************************* CELLPHONES ***************************************/
+@media screen and (max-width: 600px) {
+  header {
+    padding-top: 3rem;
+  }
+
+  .to-pg-top {
+    display: none;
+  }
+}
