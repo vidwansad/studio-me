@@ -36,7 +36,7 @@
   --panel-bg-color: rgba(255, 255, 255, 0.2);
 }
 
-.app-top > *:not(nav, .header-socials-cls, .av__logo) {
+.app-top > *:not(nav, .header-socials-cls, .av__logo, .foot) {
   background: radial-gradient(var(--color-primary), 1px, transparent 1px);
   background-size: 28px 28px;
   margin-bottom: 0.001rem;

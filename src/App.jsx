@@ -14,6 +14,7 @@ import { RevealY } from "./components/Reveal/RevealY";
 import { RevealNY } from "./components/Reveal/RevealNY";
 import { RevealX } from "./components/Reveal/RevealX";
 import { RevealNX } from "./components/Reveal/RevealNX";
+import Footer from "./components/footer/Footer";
 
 const App = () => {
   return (
@@ -36,6 +37,7 @@ const App = () => {
       <RevealNX>
         <Contact />
       </RevealNX>
+      <Footer />
     </div>
   );
 };
