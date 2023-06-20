@@ -1,0 +1,78 @@
+.tech__container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  background: var(--panel-bg-color);
+  border-radius: 10rem;
+  padding: 1rem;
+  top: 50vh;
+  transform: translateY(-50%);
+  text-align: center;
+  justify-content: space-evenly;
+  margin-top: 1rem;
+  overflow: hidden;
+  flex-wrap: wrap;
+
+  /* SKILL LEVELS */
+  --jv-skill: 95%;
+  --cp-skill: 90%;
+  --cs-skill: 90%;
+  --js-skill: 80%;
+  --rc-skill: 85%;
+  --nj-skill: 75%;
+  --ht-skill: 80%;
+  --py-skill: 80%;
+
+  --dark-fill-height: 60%;
+}
+
+.tech__container {
+  background: var(--dynamic-bg-gradient);
+  background-size: var(--dynamic-bg-size);
+  animation: var(--dynamic-bg-animation);
+}
+
+.tech__container > *:not(h1) {
+  padding: 1rem;
+  margin: 2.5rem;
+  width: 7rem;
+}
+
+.tech__container img {
+  border-radius: 2rem;
+  background: var(--color-light);
+  opacity: 70%;
+  transition: all 0.6s ease;
+}
+
+.tech__container img:hover {
+  opacity: 1;
+}
+
+/* ------ FOR EACH INDIVIDUAL CLASS ---------- */
+
+.tech__container img:hover {
+  background: var(--color-bg);
+  transform: scale(1.3);
+  backdrop-filter: blur(10px);
+}
+
+.tech__container h1 {
+  position: absolute;
+  padding: 1rem;
+  z-index: -100;
+  font-size: 12em;
+  color: rgba(255, 255, 255, 0.06);
+  transition: all 0.6s ease;
+}
+
+.tech__container:hover h1 {
+  color: var(--color-primary);
+  opacity: 0.4;
+  filter: blur(5px);
+}
+
+.tech__container img:hover h1 {
+  color: var(--color-light);
+}

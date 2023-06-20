@@ -4,7 +4,7 @@ import TopContact from "./TopContact";
 import ME from "../../assets/me.png";
 import HeaderSocials from "./HeaderSocials";
 import { Typewriter } from "react-simple-typewriter";
-import ScrollToTop from "./ScrollToTop";
+import { RevealOP } from "../Reveal/RevealOP";
 
 const Header = () => {
   return (
@@ -18,14 +18,12 @@ const Header = () => {
             words={["Competitive Programming", "Frontend Developement"]}
             typeSpeed={30}
             deleteSpeed={20}
-            loop={1000}
+            loop={0}
             delaySpeed={1500}
             cursor
             cursorStyle="_"
           />
         </div>
-
-        <HeaderSocials />
 
         <img src={ME} alt="myimg" className="img me-img"></img>
 

@@ -1,0 +1,100 @@
+.top__contacts__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  border-radius: 10rem;
+  text-align: center;
+  justify-content: center;
+  overflow: hidden;
+  width: var(--container-width-lg);
+  margin: 0 auto;
+  padding: 3rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  top: 50vh;
+  transform: translateY(-53%);
+}
+
+.top__contacts__container {
+  background: var(--dynamic-bg-gradient);
+  background-size: var(--dynamic-bg-size);
+  animation: var(--dynamic-bg-animation);
+}
+
+.headings__container > h2 {
+  color: var(--color-light);
+  font-size: 1rem;
+}
+
+.headings__container > h1 {
+  color: var(--color-primary);
+  font-size: 2rem;
+}
+
+.contact__container {
+  display: grid;
+  width: 80%;
+  grid-template-columns: 35% 58%;
+  gap: 12%;
+  margin: 0;
+}
+
+.contact__options {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.contact__option {
+  background: var(--color-bg-variant);
+  padding: 1.2rem;
+  border-radius: 1.2rem;
+  text-align: center;
+  border: 1px solid transparent;
+  transition: var(--transition);
+}
+
+.contact__option:hover {
+  background: transparent;
+  border-color: var(--color-primary-variant);
+}
+
+.contact__option-icon {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.contact__option a {
+  margin-top: 0.7rem;
+  display: inline-block;
+  font-size: 0.8rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  align-items: flex-start;
+}
+
+form h1 {
+  font-size: 1rem;
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+
+.send__button:target form h1 {
+  opacity: 1;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  background-color: transparent;
+  border: 2px solid var(--color-primary-variant);
+  resize: none;
+  color: var(--color-white);
+}

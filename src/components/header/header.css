@@ -1,6 +1,5 @@
 header {
   height: 100vh;
-  padding-top: 3.5rem;
   overflow: hidden;
 }
 
@@ -9,9 +8,17 @@ header {
   align-items: center;
   flex-direction: column;
   position: relative;
-  background: rgba(255, 255, 255, 0.17);
+  background: var(--panel-bg-color);
   border-radius: 10rem;
   padding: 1rem;
+  top: 50vh;
+  transform: translateY(-50%);
+}
+
+.header__container {
+  background: var(--dynamic-bg-gradient);
+  background-size: var(--dynamic-bg-size);
+  animation: var(--dynamic-bg-animation);
 }
 
 h1 {
@@ -34,6 +41,8 @@ h1 {
   filter: contrast(70%);
   filter: brightness(130%);
 }
+
+/******************************* ANIMATIONS ***********************************************/
 
 /************************************* TYPEWRITING ***************************************/
 .typewriting {

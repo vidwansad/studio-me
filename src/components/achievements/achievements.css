@@ -1,0 +1,109 @@
+.achievements__top__section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.achievements__top__section *:empty {
+  display: none;
+}
+
+.achievements__top__section > * {
+  transform: translateY(-8%);
+}
+
+.achievements__top__section > *:not(:last-child) {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  position: relative;
+  border-radius: 10rem;
+  padding: 3rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  text-align: center;
+  justify-items: center;
+  overflow: hidden;
+  margin: 1rem;
+}
+
+.achievements__top__section > :last-child {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  border-radius: 10rem;
+  padding: 1rem;
+  justify-content: center;
+  overflow: hidden;
+  margin: 1rem;
+}
+
+.achievements__top__section > * {
+  background: var(--dynamic-bg-gradient);
+  background-size: var(--dynamic-bg-size);
+  animation: var(--dynamic-bg-animation);
+}
+
+.ach__container > div {
+  display: flex;
+  max-width: 100%;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 3rem;
+  margin: 2rem;
+  padding: 2rem;
+  text-align: center;
+  justify-content: center;
+  overflow: hidden;
+  flex-wrap: wrap;
+  transition: all 0.6s ease;
+  opacity: 0.7;
+  backdrop-filter: blur(3px);
+}
+
+.ach__container > div:hover {
+  opacity: 1;
+  transform: scale(1.2);
+  background-color: var(--color-bg);
+}
+
+.ach__container h1 {
+  position: absolute;
+  padding: 1rem;
+  z-index: -100;
+  font-size: 9rem;
+  color: rgba(255, 255, 255, 0.1);
+  transition: all 0.6s ease;
+}
+
+.ach__container:hover h1 {
+  color: var(--color-primary);
+  opacity: 0.6;
+  filter: blur(5px);
+}
+
+.ach__container > div > h2,
+.interests__container > h2 {
+  color: var(--color-primary);
+}
+
+.ach__container > div > ul > li,
+.interests__container > ul > li {
+  color: var(--color-white);
+  list-style: square;
+  padding: 0.1rem;
+}
+
+.ach__container a {
+  color: var(--color-light);
+}
+
+.ach__container a:hover {
+  text-decoration: dashed underline;
+}
+
+.highlight {
+  color: var(--color-primary);
+}

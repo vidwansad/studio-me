@@ -11,6 +11,14 @@ const HeaderSocials = () => {
     <div className="header-socials-cls">
       <IconContext.Provider value={{ size: "1.8em" }}>
         <a
+          href="https://www.linkedin.com/in/vidwansad"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <FiLinkedin />
+        </a>
+
+        <a
           href="https://codeforces.com/profile/vidwansAD"
           target="_blank"
           rel="noreferrer"
@@ -24,14 +32,6 @@ const HeaderSocials = () => {
           rel="noreferrer"
         >
           <SiCodechef />
-        </a>
-
-        <a
-          href="https://www.linkedin.com/in/vidwansad"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <FiLinkedin />
         </a>
 
         <a href="https://github.com/vidwansad" target="_blank" rel="noreferrer">

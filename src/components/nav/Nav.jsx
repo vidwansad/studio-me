@@ -38,13 +38,13 @@ const Nav = () => {
       >
         <BsTrophy />
       </a>
-      <a
+      {/*<a
         href="#projects"
         className={activeNav === "projects" ? "active" : ""}
         onClick={() => setActiveNav("projects")}
       >
         <SiReact />
-      </a>
+      </a>*/}
       <a
         href="#contact"
         className={activeNav === "contact" ? "active" : ""}
