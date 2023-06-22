@@ -66,7 +66,7 @@ html {
 
 body {
   font-family: monospace, sans-serif;
-  background-color: var(--color-bg);
+  background-color: black;
   color: var(--color-white);
   line-height: 1.7;
 }
