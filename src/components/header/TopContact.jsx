@@ -1,6 +1,6 @@
 import React from "react";
 import "./topcontact.css";
-import CV from "../../assets/cv-placeholder.pdf";
+import CV from "../../assets/cv-plcholder.pdf";
 
 const TopContact = () => {
   return (
