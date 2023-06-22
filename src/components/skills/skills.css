@@ -103,4 +103,16 @@
     margin: 0.5rem;
     width: 5rem;
   }
+
+  .top__tech__container:hover h1 {
+    color: var(--color-primary);
+    opacity: 0.8;
+    filter: blur(3px);
+  }
+
+  .tech__container:hover h1 {
+    color: var(--color-primary);
+    opacity: 0.4;
+    filter: blur(2px);
+  }
 }

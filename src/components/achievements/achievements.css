@@ -188,4 +188,23 @@
     color: rgba(255, 255, 255, 0.1);
     transition: all 0.6s ease;
   }
+
+  .ach__container > div > ul > li,
+  .interests__container > ul > li {
+    color: var(--color-white);
+    list-style: none;
+    padding: 0.1rem;
+  }
+
+  .achievements__top__section:hover h1 {
+    color: var(--color-primary);
+    opacity: 0.8;
+    filter: blur(3px);
+  }
+
+  .ach__container:hover h1 {
+    color: var(--color-primary);
+    opacity: 0.4;
+    filter: blur(2px);
+  }
 }
