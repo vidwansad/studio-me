@@ -53,6 +53,7 @@
   text-align: center;
   border: 1px solid transparent;
   transition: var(--transition);
+  justify-content: center;
 }
 
 .contact__option:hover {
@@ -113,6 +114,7 @@ textarea {
     grid-template-columns: 1fr;
     width: 90%;
     gap: 5%;
+    justify-content: center;
   }
 
   .top__contact__section {
