@@ -11,7 +11,7 @@ import ReactLogo from "../../assets/logosvgs/Others/React-01.png";
 
 const Skills = () => {
   return (
-    <section id="skills">
+    <section id="skills" className="top__tech__container">
       <div className="container tech__container">
         <h1 className="text-light">&lt;skills&gt;</h1>
         <img src={JSLogo} className="js" alt="JS"></img>
