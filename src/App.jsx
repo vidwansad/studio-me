@@ -15,6 +15,7 @@ import { RevealNY } from "./components/Reveal/RevealNY";
 import { RevealX } from "./components/Reveal/RevealX";
 import { RevealNX } from "./components/Reveal/RevealNX";
 import Footer from "./components/footer/Footer";
+import { Analytics } from "@vercel/analytics/react";
 
 const App = () => {
   return (
@@ -38,6 +39,8 @@ const App = () => {
         <Contact />
       </RevealNX>
       <Footer />
+
+      <Analytics />
     </div>
   );
 };
