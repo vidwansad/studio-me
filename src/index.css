@@ -8,7 +8,6 @@
   text-decoration: none;
   user-select: none;
   -webkit-user-drag: none;
-  filter: saturate(1.1);
 }
 
 :root {

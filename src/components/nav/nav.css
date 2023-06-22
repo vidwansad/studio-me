@@ -9,7 +9,7 @@ nav {
   flex-direction: column;
   gap: 0.8rem;
   border-radius: 1rem;
-  background: var(--panel-bg-color);
+  background-color: var(--panel-bg-color);
 }
 
 nav a {
