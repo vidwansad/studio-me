@@ -13,17 +13,6 @@
   margin-top: 1rem;
   overflow: hidden;
   flex-wrap: wrap;
-
-  /* SKILL LEVELS */
-  --jv-skill: 95%;
-  --cp-skill: 90%;
-  --cs-skill: 90%;
-  --js-skill: 80%;
-  --rc-skill: 85%;
-  --nj-skill: 75%;
-  --ht-skill: 80%;
-  --py-skill: 80%;
-
   --dark-fill-height: 60%;
 }
 
@@ -81,4 +70,37 @@
 
 .tech__container img:hover h1 {
   color: var(--color-light);
+}
+
+/******************************** MEDIA QUERIES **********************************/
+@media screen and (max-width: 600px) {
+  .tech__container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    border-radius: 5rem;
+    padding: 1rem;
+    text-align: center;
+    justify-content: space-evenly;
+    margin-top: 1rem;
+    overflow: hidden;
+    flex-wrap: wrap;
+    --dark-fill-height: 60%;
+  }
+
+  .tech__container h1 {
+    position: absolute;
+    padding: 1rem;
+    z-index: -100;
+    font-size: 4rem;
+    color: rgba(255, 255, 255, 0.06);
+    transition: all 0.6s ease;
+  }
+
+  .tech__container > *:not(h1) {
+    padding: 1rem;
+    margin: 0.5rem;
+    width: 5rem;
+  }
 }

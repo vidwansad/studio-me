@@ -61,8 +61,8 @@
   }
 
   .about__container {
-    background: none;
     font-size: 0.6rem;
+    border-radius: 5rem;
   }
 
   .about__container h1 {

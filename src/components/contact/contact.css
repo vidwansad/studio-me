@@ -98,3 +98,24 @@ textarea {
   resize: none;
   color: var(--color-white);
 }
+
+/************************ MEDIA QUERIES *******************************/
+@media screen and (max-width: 1024px) {
+  .top__contacts__container {
+    border-radius: 3rem;
+    top: auto;
+    transform: none;
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .contact__container {
+    grid-template-columns: 1fr;
+    width: 90%;
+    gap: 5%;
+  }
+
+  .top__contact__section {
+    height: fit-content;
+  }
+}

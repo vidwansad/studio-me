@@ -16,7 +16,7 @@
 .achievements__top__section > *:not(:last-child) {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  align-items: center;
+  align-items: stretch;
   position: relative;
   border-radius: 10rem;
   padding: 3rem;
@@ -55,7 +55,7 @@
   margin: 2rem;
   padding: 2rem;
   text-align: center;
-  justify-content: center;
+  justify-content: flex-start;
   overflow: hidden;
   flex-wrap: wrap;
   transition: all 0.6s ease;
@@ -118,4 +118,74 @@
 
 .highlight {
   color: var(--color-primary);
+}
+
+/****************************** MEDIA QUERIES ***************************************/
+@media screen and (max-width: 600px) {
+  .achievements__top__section > *:not(:last-child) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: stretch;
+    position: relative;
+    border-radius: 5rem;
+    padding: 0.2rem;
+    text-align: center;
+    justify-items: center;
+    overflow: hidden;
+    margin: 0.5rem;
+  }
+
+  .achievements__top__section > :last-child {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    border-radius: 4rem;
+    padding: 0.5rem;
+    justify-content: center;
+    overflow: hidden;
+    margin: 0.5rem;
+  }
+
+  .ach__container > div {
+    display: flex;
+    max-width: 100%;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1rem;
+    text-align: center;
+    justify-content: flex-start;
+    overflow: hidden;
+    flex-wrap: wrap;
+    transition: all 0.6s ease;
+    opacity: 0.7;
+    backdrop-filter: blur(3px);
+    font-size: 0.8rem;
+    transform: scale(0.8);
+    padding: 0.5rem;
+    background-color: var(--color-bg);
+    opacity: 0.4;
+  }
+
+  .ach__container:hover div {
+    opacity: 0.4;
+    transform: scale(0.8);
+    background-color: var(--color-bg);
+  }
+  .ach__container > div:hover {
+    opacity: 1;
+    transform: scale(1);
+    background-color: var(--color-bg);
+  }
+
+  .ach__container h1 {
+    position: absolute;
+    padding: 0.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: -100;
+    font-size: 2.5rem;
+    color: rgba(255, 255, 255, 0.1);
+    transition: all 0.6s ease;
+  }
 }

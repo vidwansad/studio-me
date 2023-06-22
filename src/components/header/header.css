@@ -69,7 +69,8 @@ h1 {
 /************************************* CELLPHONES ***************************************/
 @media screen and (max-width: 600px) {
   header {
-    padding-top: 3rem;
+    height: 100vh;
+    padding: 0;
   }
 
   .to-pg-top {
